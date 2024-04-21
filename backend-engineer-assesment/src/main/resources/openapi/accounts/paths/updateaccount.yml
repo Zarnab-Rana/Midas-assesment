@@ -1,0 +1,36 @@
+patch:
+  summary: update user account
+  operationId: updateUserAccount
+  description: updates the user account with the given details.
+  tags:
+    - Accounts
+  parameters:
+    - in: path
+      name: accountId
+      required: true
+      schema:
+        type: string
+        minimum: 1
+        description: the account id
+  requestBody:
+    description: User account details
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../schemas.yml#/components/schemas/updateAccount"
+  responses:
+    "200":
+      description: User account updated
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas.yml#/components/schemas/account"
+    "400":
+      $ref: "../../common/responses.yml#/components/responses/badRequest"
+    "401":
+      $ref: "../../common/responses.yml#/components/responses/unauthorized"
+    "403":
+      $ref: "../../common/responses.yml#/components/responses/forbidden"
+    "500":
+      $ref: "../../common/responses.yml#/components/responses/internalServerError"

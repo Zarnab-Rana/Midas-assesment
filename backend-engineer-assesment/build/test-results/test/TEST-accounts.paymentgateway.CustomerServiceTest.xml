@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="accounts.paymentgateway.CustomerServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-04-21T16:37:14" hostname="MASH-PF4D8NPZ" time="0.328">
+  <properties/>
+  <testcase name="updateCustomerAtStripeWithSuccess()" classname="accounts.paymentgateway.CustomerServiceTest" time="0.321"/>
+  <testcase name="createCustomerAtStripeWithSuccess()" classname="accounts.paymentgateway.CustomerServiceTest" time="0.005"/>
+  <system-out><![CDATA[21:37:14.456 [Test worker] INFO com.midas.app.patmentgateway.service.CustomerService -- Creating customer at stripe with request : class CreateAccountDto {
+    firstName: abc
+    lastName: xyz
+    email: xyz@gmail.com
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

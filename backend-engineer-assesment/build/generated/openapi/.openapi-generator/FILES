@@ -1,0 +1,9 @@
+.openapi-generator-ignore
+README.md
+pom.xml
+src/main/java/com/midas/generated/api/AccountsApi.java
+src/main/java/com/midas/generated/api/ApiUtil.java
+src/main/java/com/midas/generated/model/AccountDto.java
+src/main/java/com/midas/generated/model/CreateAccountDto.java
+src/main/java/com/midas/generated/model/ErrorDto.java
+src/main/java/com/midas/generated/model/UpdateAccountDto.java
